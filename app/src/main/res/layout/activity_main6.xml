@@ -5,41 +5,60 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity5">
+    tools:context=".MainActivity6">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:text="Image Viewer"
+        android:textColor="#FF0000"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_marginTop="150dp"
+        android:gravity="center_horizontal"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:text="안녕하세요"
+        android:background="@drawable/border_layout"
+        android:textColor="@android:color/background_dark"
+        android:layout_marginHorizontal="100dp"
+        android:textSize="30sp" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="259dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="230dp"
+        app:srcCompat="@drawable/aey" />
 
     <LinearLayout
         android:id="@+id/linearLayout1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
         android:orientation="vertical"
-        >
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp">
 
-        <ImageView
-            android:id="@+id/imageView1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+        <Button
+            android:id="@+id/button"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
             android:layout_marginHorizontal="125dp"
             android:layout_weight="1"
-            android:onClick="myClicked"
-            app:srcCompat="@drawable/aey" />
-
-        <ImageView
-            android:id="@+id/imageView2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="125dp"
-            android:layout_weight="1"
-            app:srcCompat="@drawable/aey" />
-
-        <ImageView
-            android:id="@+id/imageView3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="125dp"
-            android:layout_weight="1"
-            app:srcCompat="@drawable/aey" />
-
+            android:background="@drawable/border_layout2"
+            android:text="Button"
+            android:textColor="@android:color/background_dark"
+            android:textSize="20sp" />
     </LinearLayout>
+
 
 </RelativeLayout>

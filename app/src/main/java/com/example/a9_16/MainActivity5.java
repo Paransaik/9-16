@@ -12,7 +12,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import static android.widget.Toast.LENGTH_LONG;
 
 public class MainActivity5 extends AppCompatActivity implements View.OnClickListener {
-
     ImageView imgV1;
     ImageView imgV2;
 

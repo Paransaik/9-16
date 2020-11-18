@@ -22,7 +22,7 @@ public class MainActivity6 extends AppCompatActivity implements View.OnCreateCon
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main5);
+        setContentView(R.layout.activity_main6);
 
         button = (Button)findViewById(R.id.button);
         registerForContextMenu(button);
@@ -35,8 +35,6 @@ public class MainActivity6 extends AppCompatActivity implements View.OnCreateCon
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        //getMenuInflater().inflate(R.menu.menu, menu);
         MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.menu, menu);
         return true;
@@ -44,9 +42,6 @@ public class MainActivity6 extends AppCompatActivity implements View.OnCreateCon
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
