@@ -44,6 +44,13 @@ public class MainActivity extends AppCompatActivity{
                 openActivity5();
             }
         });
+
+        button = (Button) findViewById(R.id.button5);
+        button.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+                openActivity6();
+            }
+        });
     }
 
     public void openActivity2() {
@@ -58,9 +65,12 @@ public class MainActivity extends AppCompatActivity{
         Intent intent = new Intent(this, MainActivity4.class);
         startActivity(intent);
     }
-
     public void openActivity5() {
         Intent intent = new Intent(this, MainActivity5.class);
+        startActivity(intent);
+    }
+    public void openActivity6() {
+        Intent intent = new Intent(this, MainActivity6.class);
         startActivity(intent);
     }
 
